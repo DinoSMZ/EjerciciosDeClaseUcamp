@@ -1,6 +1,6 @@
 //reducee
 
-const calificaciones = [80, 60, 40, 90, 100, 77]
+/* const calificaciones = [80, 60, 40, 90, 100, 77]
 
 function promedio(arregloCalificaciones) {
     var suma = arregloCalificaciones.reduce(function(acumulador, elemento) {
@@ -71,5 +71,5 @@ arreglo.map(function(elemento) {
 })
 
 for (var i = 0; i < arreglo.length; i++)[
-    elemento[i] = elemento[i] / 2;
-]
+    elemento[i] = elemento[i] / 2
+] */
