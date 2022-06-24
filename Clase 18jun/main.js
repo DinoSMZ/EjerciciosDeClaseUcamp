@@ -1,4 +1,5 @@
 const input = document.getElementById('input');
+
 function imprimeValorInput() {
     console.log(input.value);
 }
@@ -22,11 +23,13 @@ etiquetaImagen.style = style
 
 //Eventos
 let miBoton = document.getElementById('boton1');
+
 function miFuncion(event) {
     // Con innerHTML
     divImagenes.innerHTML += `<img src ="${src}" style = "${style}" />`;
     /* miBoton = document.getElementById('boton1');
-    miBoton.addEventListener('click', miFuncion) */;
+    miBoton.addEventListener('click', miFuncion) */
+    ;
 }
 
 miBoton.addEventListener('click', miFuncion);
@@ -38,15 +41,15 @@ const inputApellido = document.getElementById('inputApellido');
 const inputTelefono = document.getElementById('inputTelefono');
 const bodyTabla = document.getElementById('body-tabla');
 const contactos = [{
-    nombre: 'Maria',
-    apellido: 'Lopez',
-    telefono: '1256432184',
-},
-{
-    nombre: 'Maria',
-    apellido: 'Lopez',
-    telefono: '9923432184',
-},
+        nombre: 'Maria',
+        apellido: 'Lopez',
+        telefono: '1256432184',
+    },
+    {
+        nombre: 'Maria',
+        apellido: 'Lopez',
+        telefono: '9923432184',
+    },
 ];
 
 
@@ -59,15 +62,15 @@ function agregarContacto(nombre, apellido, telefono) {
 }
 
 function eliminarContacto(indice) {
- contactos.splice(indice, 1)
-  mostrarContactos();
+    contactos.splice(indice, 1)
+    mostrarContactos();
 
-    
+
 }
 
 function mostrarContactos() {
     bodyTabla.innerHTML = '';
-    contactos.forEach(function (contacto, indice) {
+    contactos.forEach(function(contacto, indice) {
         bodyTabla.innerHTML += `<tr>
         <th scope="row">${indice + 1}</th>
         <td>${contacto.nombre}</td>
@@ -90,7 +93,7 @@ function editarContacto(indice) {
 }
 
 
-contactoForm.addEventListener('submit', function (event) {
+contactoForm.addEventListener('submit', function(event) {
     event.preventDefault();
     /* 
     numero1 = numero1 + 123424123;
@@ -111,8 +114,3 @@ contactoForm.addEventListener('submit', function (event) {
 });
 
 mostrarContactos();
-
-
-
-
-
